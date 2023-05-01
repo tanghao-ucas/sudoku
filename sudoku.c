@@ -9,6 +9,8 @@ struct PlayBoard
 	int board[SIZE][SIZE];
 };
 
+
+
 /*
  * PlayBoard Initialization
  */
@@ -19,6 +21,8 @@ int BoardInit(struct PlayBoard *playboard)
 			playboard->board[i][j] = 0;
 	return 0;
 }
+
+
 
 /*
  * PlayBoard Input
@@ -50,6 +54,8 @@ int BoardAdd(struct PlayBoard *playboard)
 	playboard->board[posx-1][posy-1] = num;
 	return 0;
 }
+
+
 
 
 /*
@@ -85,6 +91,9 @@ void BoardDisplay(struct PlayBoard playboard)
 	}
 	CutOffDisplay();
 }
+
+
+
 
 
 /*
